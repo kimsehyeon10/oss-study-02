@@ -10,7 +10,7 @@ jobs:
        uses: actions/chekout@v2
       -name: Fetch num squared
        id: get_square
-       uses: ./ 
+       uses: ./ Uses an action in the root directory
        with: 
         num: 11
       - name : Print the square

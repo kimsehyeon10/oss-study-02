@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v2  # 수정: actions/chekout@v2 -> actions/checkout@v2
       - name: Fetch num squared
         id: get_square
-        uses: ./  # 수정: ./ Uses an action in the root directory -> ./
+        uses: actions/setup-python@v4
         with: 
           num: 11
       - name: Print the square
